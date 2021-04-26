@@ -1,2 +1,2 @@
-# Snake.io-Grow-Shrink
-### Snake.io project that grows itself or shrinks based on what it eats
+# Snake: Grow or Shrink
+### A version of Snake.io game that grows itself or shrinks based on what it eats
