@@ -46,16 +46,16 @@ def drawScore(score):
 
 #Creates the snake
 def drawSnake(cellSize, cellPixels):
-    head = 1
+    tail = 1
     for cell in cellPixels:
         #Draws rectangles on the window and gives it x and y cordinates in comparison with width and height
-        if head == 0:
+        if tail == 0:
             pygame.draw.rect(window, outerColor, [cell[0], cell[1], cellSize, cellSize])
             pygame.draw.rect(window, innerColor, [cell[0] + 1, cell[1] + 1, cellSize - 2, cellSize -2])
-        if head == 1:
+        if tail == 1:
             pygame.draw.rect(window, outerColor, [cell[0], cell[1], cellSize, cellSize])
             pygame.draw.rect(window, tailColor, [cell[0] + 1, cell[1] + 1, cellSize - 2, cellSize -2])
-            head = 0
+            tail = 0
 
 #Creates the game
 def runGame():
