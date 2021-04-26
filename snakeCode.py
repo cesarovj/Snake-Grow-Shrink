@@ -149,6 +149,8 @@ def runGame():
         pygame.draw.rect(window, poisonColor, [poisonX, poisonY, cellSize, cellSize])
         pygame.draw.rect(window, foodColor, [foodX2, foodY2, cellSize, cellSize])
         pygame.draw.rect(window, poisonColor, [poisonX2, poisonY2, cellSize, cellSize])
+        pygame.draw.rect(window, poisonColor, [poisonX3, poisonY3, cellSize, cellSize])
+        pygame.draw.rect(window, poisonColor, [poisonX4, poisonY4, cellSize, cellSize])
 
         cellPixels.append([snakePosx, snakePosy])
         
