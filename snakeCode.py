@@ -85,6 +85,10 @@ def runGame():
     foodY2 = round(random.randrange(0, height - cellSize) / 10.0) * 10
     poisonX2 = round(random.randrange(0, width - cellSize) / 10.0) * 10
     poisonY2 = round(random.randrange(0, height - cellSize) / 10.0) * 10
+    poisonX3 = round(random.randrange(0, width - cellSize) / 10.0) * 10
+    poisonY3 = round(random.randrange(0, height - cellSize) / 10.0) * 10
+    poisonX4 = round(random.randrange(0, width - cellSize) / 10.0) * 10
+    poisonY4 = round(random.randrange(0, height - cellSize) / 10.0) * 10
 
     #While the game is not done, keep iterating
     while not gameOver:
@@ -172,9 +176,13 @@ def runGame():
             foodY2 = round(random.randrange(0, height - cellSize) / 10) * 10
             poisonX2 = round(random.randrange(0, width - cellSize) / 10) * 10
             poisonY2 = round(random.randrange(0, height - cellSize) / 10) * 10
+            poisonX3 = round(random.randrange(0, width - cellSize) / 10.0) * 10
+            poisonY3 = round(random.randrange(0, height - cellSize) / 10.0) * 10
+            poisonX4 = round(random.randrange(0, width - cellSize) / 10.0) * 10
+            poisonY4 = round(random.randrange(0, height - cellSize) / 10.0) * 10
             snakeSize += 1
                 
-        if (snakePosx == poisonX and snakePosy == poisonY) or (snakePosx == poisonX2 and snakePosy == poisonY2):
+        if (snakePosx == poisonX and snakePosy == poisonY) or (snakePosx == poisonX2 and snakePosy == poisonY2) or (snakePosx == poisonX3 and snakePosy == poisonY3) or (snakePosx == poisonX4 and snakePosy == poisonY4):
             poisonX = round(random.randrange(0, width - cellSize) / 10) * 10
             poisonY = round(random.randrange(0, height - cellSize) / 10) * 10
             foodX = round(random.randrange(0, width - cellSize) / 10) * 10
@@ -183,6 +191,10 @@ def runGame():
             poisonY2 = round(random.randrange(0, height - cellSize) / 10) * 10
             foodX2 = round(random.randrange(0, width - cellSize) / 10) * 10
             foodY2 = round(random.randrange(0, height - cellSize) / 10) * 10
+            poisonX3 = round(random.randrange(0, width - cellSize) / 10.0) * 10
+            poisonY3 = round(random.randrange(0, height - cellSize) / 10.0) * 10
+            poisonX4 = round(random.randrange(0, width - cellSize) / 10.0) * 10
+            poisonY4 = round(random.randrange(0, height - cellSize) / 10.0) * 10
             snakeSize -= 1
             cellPixels.remove([snakePosx, snakePosy])
             if snakeSize < 1:
