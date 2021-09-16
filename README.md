@@ -3,6 +3,6 @@
 
 #### This is the link to the video https://youtu.be/hNuHIryq428
 
-This porject was created using:
+This project was created using:
 * Python
 * Pygame
